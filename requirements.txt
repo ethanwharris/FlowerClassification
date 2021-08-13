@@ -1,0 +1,6 @@
+lightning-grilightning-grid
+fiftyone
+pip install 'git+https://github.com/PyTorchLightning/lightning-flash.git#egg=lightning-flash[image]'
+#lightning-flash[image] --force-reinstall
+lightning-flash[image]==0.3.2
+nltk!=3.6
