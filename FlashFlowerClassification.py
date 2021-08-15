@@ -25,8 +25,8 @@ model.serializer = Labels()
 
 predictions = model.predict(
     [
-        "/home/jovyan/mlproject/flower-dataset/val/roses/4644336779_acd973528c.jpg",
-        "/home/jovyan/mlprojectflower-dataset/val/tulips/2436998042_4906ea07af.jpg",
+        "/home/jovyan/flower-dataset/val/roses/4644336779_acd973528c.jpg",
+        "/home/jovyan/flower-dataset/val/tulips/2436998042_4906ea07af.jpg",
     ]
 )
 print(predictions)
