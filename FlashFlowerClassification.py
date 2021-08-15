@@ -5,9 +5,9 @@ from flash.image import ImageClassificationData, ImageClassifier
 # 1. Use the datastore 
 
 datamodule = ImageClassificationData.from_folders(
-    train_folder="/home/jovyan/mlproject/FlowerClassification/flower-dataset/train/data/hymenoptera_data/train/",
-    val_folder="/home/jovyan/mlproject/FlowerClassification/flower-dataset/val/",
-    test_folder="/home/jovyan/mlproject/FlowerClassification/flower-dataset/test/",
+    train_folder="/home/jovyan/flower-dataset/train/data/hymenoptera_data/train/",
+    val_folder="/home/jovyan/flower-dataset/val/",
+    test_folder="/home/jovyan/flower-dataset/test/",
 )
 
 # 2. Build the task
@@ -25,8 +25,8 @@ model.serializer = Labels()
 
 predictions = model.predict(
     [
-        "/home/jovyan/mlproject/FlowerClassification/flower-dataset/val/roses/4644336779_acd973528c.jpg",
-        "/home/jovyan/mlproject/FlowerClassification/flower-dataset/val/tulips/2436998042_4906ea07af.jpg",
+        "/home/jovyan/mlproject/flower-dataset/val/roses/4644336779_acd973528c.jpg",
+        "/home/jovyan/mlprojectflower-dataset/val/tulips/2436998042_4906ea07af.jpg",
     ]
 )
 print(predictions)
